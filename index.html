@@ -7,44 +7,43 @@
   </head>
   <body>
     <header>
-      <a href='index.html' class='header-logo'>DEVICE</a>
-      <div class='search'>
-        <form>
-          <input type='text' placeholder='Поиск по сайту'/>
-          <input type='submit' name='submit' value='Найти'>
-        </form>
-      </div>
-      <div class='panel'>
-        <a href='#' class='panel-user'>Валентин Петухов</a>
-        <a href='#' class='panel-logout'>Выйти</a>
-        <a href='#' class='panel-compare'>Сравнить</a>
-        <a href='#' class='panel-cart'>Корзина</a>
-      </div>
-      <nav class='main-menu'>
-        <ul>
-          <li>
-            <a class='menu-link' href='catalog.html'>Каталог товаров</a>
-            <ul class='catalog-additional'>
-              <li><a href='virtual.html'>Виртуальная реальность</a></li>
-              <li><a href='fitnes-braslets.html'>Фитнес-браслеты</a></li>
-              <li><a href='quadrocopters.html'>Квадрокоптеры</a></li>
-              <li><a href='monopods.html'>Моноподы для селфи</a></li>
-              <li><a href='smart-clocks.html'>Умные часы</a></li>
-              <li><a href='action-cameras.html'>Эшкн-камеры</a></li>
-            </ul>
-          </li>
-          <li><a class='menu-link' href='delivery.html'>Доставка</a></li>
-          <li><a class='menu-link' href='warranty.html'>Гарантия</a></li>
-          <li><a class='menu-link' href='contacts.html'>Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+        <a href='index.html' class='header-logo'>DEVICE</a>
+        <div class='search'>
+          <form class='search-form' action='https://echo.htmlacademy.ru' method='POST'>
+            <input type='text' placeholder='Поиск по сайту'/>
+            <input type='submit' name='submit' value='Найти'>
+          </form>
+        </div>
+        <div class='panel'>
+          <a href='login.html' class='panel-logoin'>Войти</a>
+          <a href='compare.html' class='panel-compare'>Сравнить</a>
+          <a href='cart.html' class='panel-cart'>Корзина</a>
+        </div>
+        <nav class='main-menu'>
+          <ul class='menu-links'>
+            <li>
+              <a class='menu-link' href='catalog.html'>Каталог товаров</a>
+              <ul class='catalog-additional'>
+                <li><a href='virtual.html'>Виртуальная реальность</a></li>
+                <li><a href='fitnes-braslets.html'>Фитнес-браслеты</a></li>
+                <li><a href='quadrocopters.html'>Квадрокоптеры</a></li>
+                <li><a href='monopods.html'>Моноподы для селфи</a></li>
+                <li><a href='smart-clocks.html'>Умные часы</a></li>
+                <li><a href='action-cameras.html'>Эшкн-камеры</a></li>
+              </ul>
+            </li>
+            <li><a class='menu-link' href='delivery.html'>Доставка</a></li>
+            <li><a class='menu-link' href='warranty.html'>Гарантия</a></li>
+            <li><a class='menu-link' href='contacts.html'>Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
     <main>
 
       <div class='slider'>
         <!-- SLIDE -->
         <section class='slide'>
-          <img src='#' alt='Селфипалка'>
+          <img src='slide-1-selfiestick.png' alt='Селфипалка'>
           <div class='slide-description'>
             <span class='slide-number'>01</span>
             <h2>Делай селфи, как Бен Стиллер!</h2>
@@ -52,7 +51,7 @@
               Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
-            <a href='#' class='slide-read-more extra-button'>Подробнее</a>
+            <a href='main-selfiestick.html' class='slide-read-more extra-button'>Подробнее</a>
             <ul class='slide-features'>
               <li class='slide-feature'>
                 <span class='slide-feature-value'>8,5 м</span>
@@ -72,7 +71,7 @@
         <!-- END SLIDE -->
         <!-- SLIDE -->
         <section class='slide'>
-          <img src='#' alt='Фитнес-браслет'>
+          <img src='slide-2-clocks' alt='Фитнес-браслет'>
           <div class='slide-description'>
             <span class='slide-number'>02</span>
             <h2>Худеем правильно!</h2>
@@ -80,7 +79,7 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы 
               не пропускать занятия и соблюдать диету.
             </p>
-            <a href='#' class='slide-read-more extra-button'>Подробнее</a>
+            <a href='main-fitnes-braslet.html' class='slide-read-more extra-button'>Подробнее</a>
             <ul class='slide-features'>
               <li class='slide-feature'>
                 <span class='slide-feature-value'>48 часов</span>
@@ -92,7 +91,7 @@
         <!-- END SLIDE -->
         <!-- SLIDE -->
         <section class='slide'>
-          <img src='#' alt='Квадрокоптер'>
+          <img src='slide-3-quadrocopter' alt='Квадрокоптер'>
           <div class='slide-description'>
             <span class='slide-number'>03</span>
             <h2>Порхает как бабочка, жалит как пчела!</h2>
@@ -100,7 +99,7 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащен 
               мощным лазером, замаскированным под стандартную камеру.
             </p>
-            <a href='#' class='slide-read-more extra-button'>Подробнее</a>
+            <a href='main-quadrocopter.html' class='slide-read-more extra-button'>Подробнее</a>
             <ul class='slide-features'>
               <li class='slide-feature'>
                 <span class='slide-feature-value'>800 метров</span>
@@ -125,41 +124,35 @@
 
       <div class='popular-products'>
         <a href='virtual.html'>
-          <img src='#' alt='Виртуальная реальность'>
+          <img src='product-1.png' alt='Виртуальная реальность'>
           <span class='product-label'>Виртуальная реальность</span>
         </a>
         <a href='monopods.html'>
-          <img src='#' alt='Моноподы для селфи'>
+          <img src='product-2.png' alt='Моноподы для селфи'>
           <span class='product-label'>Моноподы для селфи</span>
         </a>
         <a href='action-cameras.html'>
-          <img src='#' alt='Экшн-камеры'>
+          <img src='product-3.png' alt='Экшн-камеры'>
           <span class='product-label'>Экшн-камеры</span>
         </a>
         <a href='fitnes-braslets.html'>
-          <img src='#' alt='Фитнес-браслеты'>
+          <img src='product-4.png' alt='Фитнес-браслеты'>
           <span class='product-label'>Фитнес-браслеты</span>
         </a>
         <a href='smart-clocks.html'>
-          <img src='#' alt='Умные часы'>
+          <img src='product-5.png' alt='Умные часы'>
           <span class='product-label'>Умные часы</span>
         </a>
         <a href='quadrocopters.html'>
-          <img src='#' alt='Квадрокоптеры'>
+          <img src='product-6.png' alt='Квадрокоптеры'>
           <span class='product-label'>Квадрокоптеры</span>
         </a>
       </div>
       <div class='services'>
-        <ul>
-          <li>
-            <a href='#' class='extra-button'>Доставка</a>
-          </li>
-          <li>
-            <a href='#' class='extra-button'>Гарантия</a>
-          </li>
-          <li>
-            <a href='#' class='extra-button'>Кредит</a>
-          </li>
+        <ul class='services-menu'>
+          <li class='extra-button'>Доставка</li>
+          <li class='extra-button'>Гарантия</li>
+          <li class='extra-button'>Кредит</li>
         </ul>
         <section class='service'>
           <h3>Доставка</h3>
@@ -185,17 +178,17 @@
       </div>
 
       <div class='partners'>
-        <a class='partner' href='#'>
-          <img src='#' alt='dji'>
+        <a class='partner' href='http://www.dji.com/'>
+          <img src='partner-1.jpg' alt='dji'>
         </a>
-        <a class='partner' href='#'>
-          <img src='#' alt='spgadgets'>
+        <a class='partner' href='http://www.sp-gadgets.com/'>
+          <img src='partner-2.jpg' alt='spgadgets'>
         </a>
-        <a class='partner' href='#'>
-          <img src='#' alt='gopro'>
+        <a class='partner' href='http://gopro.ru/'>
+          <img src='partner-3.jpg' alt='gopro'>
         </a>
-        <a class='partner' href='#'>
-          <img src='#' alt='vive'>
+        <a class='partner' href='https://www.htcvive.com/'>
+          <img src='partner-4.jpg' alt='vive'>
         </a>
       </div>
 
@@ -209,44 +202,60 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href='#' class='extra-button'>Подробнее о нас </a>
+          <a href='about-us.html' class='extra-button'>Подробнее о нас </a>
         </section>
         <section class='contacts'>
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
           <div class='map'></div>
-          <a href='#' class='extra-button'>Напишите нам</a>
+          <a href='write-us.html' class='extra-button'>Напишите нам</a>
         </section>
       </div>
 
     </main>
     <footer>
       <div class='footer-left'>
-        <a href='#' class='footer-logo'></a>
+        <a href='index.html' class='footer-logo'></a>
         <p>г. Москва, ул. Строителей 15</p>
       </div>
       <div class='footer-center'>
-        <nav>
-          <a href='#'>Доставка</a>
-          <a href='#'>Гарантия</a>
-          <a href='#'>Контакты</a>
-        </nav>
+        <div class='footer-menu'>
+          <a href='delivery.html'>Доставка</a>
+          <a href='warranty.html'>Гарантия</a>
+          <a href='contacts.html'>Контакты</a>
+        </div>
         <div class='social-links'>
-          <a href='#' class='facebook social-button'></a>
-          <a href='#' class='instagram social-button'></a>
-          <a href='#' class='twitter social-button'></a>
+          <a href='https://www.facebook.com/' class='facebook social-button'></a>
+          <a href='https://www.instagram.com/' class='instagram social-button'></a>
+          <a href='https://twitter.com/' class='twitter social-button'></a>
         </div>
       </div>
       <div class='footer-right'>
         <div class='footer-user-panel'>
-          <a href='#' class='panel-enter'>Войти</a>
-          <a href='#' class='panel-compare'>Сравнить</a>
-          <a href='#' class='panel-cart'>Корзина</a>
+          <a href='login.html' class='panel-logoin'>Войти</a>
+          <a href='compare.html' class='panel-compare'>Сравнить</a>
+          <a href='cart.html' class='panel-cart'>Корзина</a>
         </div>
       </div>
       <span>Тел.: +7 (495) 495-95-95</span>
       <img src='https://htmlacademy.ru/intensive/htmlcss' alt='HTMLAcademy Logo'>
     </footer>
+    <div class='write-us modal-hide'>
+      <button class='modal-close'></button>
+      <form class='write-us-form' action='https://echo.htmlacademy.ru' method='POST'>
+        <label for='write-us-name'>Ваше имя:</label>
+          <input type='text' class='write-us-field' id='write-us-name' placeholder='Представьтесь, пожалуйста' name='email'/>
+        <label for='write-us-email'>Ваш e-mail:</label>
+          <input type='text' class='write-us-field' id='write-us-email' placeholder='Для отправки ответа' name='email'/>
+        <label for='write-us-text'>Текст письма:</label>
+          <input type='text' class='write-us-field' id='write-us-text' placeholder='В свободной форме' name='text'/>
+        <input type='submit' class='extra-button' value='Отправить'>
+      </form>
+    </div>
+    <div class='map modal-hide'>
+      <button class='modal-close'></button>
+      <map id='yandex-map' name='yandex-map'></map>
+    </div>
   </body>
 </html>
