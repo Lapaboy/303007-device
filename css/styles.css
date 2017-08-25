@@ -1,5 +1,5 @@
 body {
-
+    color: #464646;
 }
 
 header {
@@ -10,4 +10,8 @@ header {
 footer {
     background-color: #464646;
     height: 300px;
+}
+
+.visually-hidden {
+    display: none;
 }

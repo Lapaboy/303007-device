@@ -7,37 +7,37 @@
   </head>
   <body>
     <header>
-        <a href='index.html' class='header-logo'>DEVICE</a>
-        <div class='search'>
-          <form class='search-form' action='https://echo.htmlacademy.ru' method='POST'>
-            <input type='text' placeholder='Поиск по сайту'/>
-            <input type='submit' name='submit' value='Найти'>
-          </form>
-        </div>
-        <div class='panel'>
-          <a href='login.html' class='panel-logoin'>Войти</a>
-          <a href='compare.html' class='panel-compare'>Сравнить</a>
-          <a href='cart.html' class='panel-cart'>Корзина</a>
-        </div>
-        <nav class='main-menu'>
-          <ul class='menu-links'>
-            <li>
-              <a class='menu-link' href='catalog.html'>Каталог товаров</a>
-              <ul class='catalog-additional'>
-                <li><a href='virtual.html'>Виртуальная реальность</a></li>
-                <li><a href='fitnes-braslets.html'>Фитнес-браслеты</a></li>
-                <li><a href='quadrocopters.html'>Квадрокоптеры</a></li>
-                <li><a href='monopods.html'>Моноподы для селфи</a></li>
-                <li><a href='smart-clocks.html'>Умные часы</a></li>
-                <li><a href='action-cameras.html'>Эшкн-камеры</a></li>
-              </ul>
-            </li>
-            <li><a class='menu-link' href='delivery.html'>Доставка</a></li>
-            <li><a class='menu-link' href='warranty.html'>Гарантия</a></li>
-            <li><a class='menu-link' href='contacts.html'>Контакты</a></li>
-          </ul>
-        </nav>
-      </header>
+      <a href='index.html' class='header-logo'>DEVICE</a>
+      <div class='search'>
+        <form class='search-form' action='https://echo.htmlacademy.ru' method='POST'>
+          <input type='text' placeholder='Поиск по сайту'/>
+          <input type='submit' name='submit' value='Найти'>
+        </form>
+      </div>
+      <div class='panel'>
+        <a href='login.html' class='panel-logoin'>Войти</a>
+        <a href='compare.html' class='panel-compare'>Сравнить</a>
+        <a href='cart.html' class='panel-cart'>Корзина</a>
+      </div>
+      <nav class='main-menu'>
+        <ul class='menu-links'>
+          <li>
+            <a class='menu-link' href='catalog.html'>Каталог товаров</a>
+            <ul class='catalog-additional'>
+              <li><a href='virtual.html'>Виртуальная реальность</a></li>
+              <li><a href='fitnes-braslets.html'>Фитнес-браслеты</a></li>
+              <li><a href='quadrocopters.html'>Квадрокоптеры</a></li>
+              <li><a href='monopods.html'>Моноподы для селфи</a></li>
+              <li><a href='smart-clocks.html'>Умные часы</a></li>
+              <li><a href='action-cameras.html'>Эшкн-камеры</a></li>
+            </ul>
+          </li>
+          <li><a class='menu-link' href='delivery.html'>Доставка</a></li>
+          <li><a class='menu-link' href='warranty.html'>Гарантия</a></li>
+          <li><a class='menu-link' href='contacts.html'>Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
 
       <div class='slider'>
@@ -70,7 +70,7 @@
         </section>
         <!-- END SLIDE -->
         <!-- SLIDE -->
-        <section class='slide'>
+        <section class='slide visually-hidden'>
           <img src='img/slide-2-clocks.png' alt='Фитнес-браслет'>
           <div class='slide-description'>
             <span class='slide-number'>02</span>
@@ -90,7 +90,7 @@
         </section>
         <!-- END SLIDE -->
         <!-- SLIDE -->
-        <section class='slide'>
+        <section class='slide visually-hidden'>
           <img src='img/slide-3-quadrocopter.jpg' alt='Квадрокоптер'>
           <div class='slide-description'>
             <span class='slide-number'>03</span>
@@ -150,9 +150,9 @@
       </div>
       <div class='services'>
         <ul class='services-menu'>
-          <li class='extra-button'>Доставка</li>
-          <li class='extra-button'>Гарантия</li>
-          <li class='extra-button'>Кредит</li>
+          <li class='extra-button'><a href='#'>Доставка</a></li>
+          <li class='extra-button'><a href='#'>Гарантия</a></li>
+          <li class='extra-button'><a href='#'>Кредит</a></li>
         </ul>
         <section class='service'>
           <h3>Доставка</h3>
@@ -161,14 +161,14 @@
             Ведь мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
         </section>
-        <section class='service'>
+        <section class='service visually-hidden'>
           <h3>Гарантия</h3>
           <p>
             Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, 
             мы выдадим вам новый.Товар, не дом, конечно же.
           </p>
         </section>
-        <section class='service'>
+        <section class='service visually-hidden'>
           <h3>Доставка</h3>
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
@@ -241,7 +241,7 @@
       <span>Тел.: +7 (495) 495-95-95</span>
       <img src='img/https://htmlacademy.ru/intensive/htmlcss' alt='HTMLAcademy Logo'>
     </footer>
-    <div class='write-us modal-hide'>
+    <div class='write-us visually-hidden'>
       <button class='modal-close'></button>
       <form class='write-us-form' action='https://echo.htmlacademy.ru' method='POST'>
         <label for='write-us-name'>Ваше имя:</label>
@@ -253,7 +253,7 @@
         <input type='submit' class='extra-button' value='Отправить'>
       </form>
     </div>
-    <div class='map modal-hide'>
+    <div class='map visually-hidden'>
       <button class='modal-close'></button>
       <map id='yandex-map' name='yandex-map'></map>
     </div>
