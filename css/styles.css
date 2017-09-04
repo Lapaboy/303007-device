@@ -1,17 +1,185 @@
+@font-face{
+    font-weight: 700;
+    font-family: "Gilroy ExtraBold";
+    font-style: normal;
+    src:
+        url(../fonts/gilroyextrabold.woff) format("woff"),
+        url(../fonts/gilroyextrabold.woff2) format("woff2")
+}
+
+@font-face{
+    font-weight: lighter;
+    font-family: "Gilroy Light";
+    font-style: normal;
+    src:
+        url(../fonts/gilroylight.woff) format("woff"),
+        url(../fonts/gilroylight.woff2) format("woff2")
+}
+
+@font-face{
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-style: normal;
+    src:
+        url(../fonts/opensans.woff) format("woff"),
+        url(../fonts/opensans.woff2) format("woff2")
+}
+
+@font-face{
+    font-weight: lighter;
+    font-family: "Open Sans Light";
+    font-style: normal;
+    src:
+        url(../fonts/opensanslight.woff) format("woff"),
+        url(../fonts/opensanslight.woff2) format("woff2")
+}
+
+/** COMMON */
 body {
     color: #464646;
+    min-width: 1240px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Open Sans Light","Arial",sans-serif
 }
 
-header {
-    background: #f7e296;
-    height: 300px;
+h1, h2 {
+    font-size: 47px;
+    font-family: "Gilroy ExtraBold", "Arial",sans-serif;
+    color:#000
 }
 
-footer {
-    background-color: #464646;
-    height: 300px;
+.extra-button {
+    font-size: 18px;
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3.6px;
 }
 
 .visually-hidden {
     display: none;
 }
+
+/* HEADER */
+header {
+    background: #f7e296;
+    height: 300px;
+}
+
+    .header-logo {
+        font-family: "Gilroy ExtraBold";
+        color: #000;
+        font-size: 48px;
+        text-decoration: none;
+    }
+
+    .search {
+        font-family: "Open Sans Light";
+        color: rgba(0, 0, 0, .3);
+        font-size: 15px;
+        line-height: 36px;
+    } 
+    
+    panel {
+        font-family: "Open Sans Light";
+        font-size: 15px;
+        line-height: 36px;
+    }
+
+    .menu-links a {
+        font-family: "Gilroy ExtraBold";
+        color: #000;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .2em;
+    }
+
+/* MAIN */
+.slide h2 {
+    line-height: 56px;
+    letter-spacing: .012em;
+    word-spacing: .012em;
+}
+
+.slide p {
+    line-height: 30px;
+    letter-spacing: .012em;
+    word-spacing: .01em;
+}
+
+.info h2 {
+    letter-spacing: .012em;
+}
+
+.info p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.delivery-partners {
+    font-size: 16px;
+    line-height: 40px;
+    color: #000;
+    /* Нужен ли тут этот шрифт тут или родителю? */
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+}
+
+.popular-products span {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: .015em;
+}
+
+.services h2 {
+    letter-spacing: .018em;
+}
+
+.services p {
+    line-height: 30px;
+    letter-spacing: .018em;
+}
+
+/* ----------*/
+footer {
+    background-color: #464646;
+    height: 300px;
+}
+
+    footer span {
+        color: #fff;
+        line-height: 30px;
+    }
+
+    .footer-left .footer-logo {
+        font-family: "Gilroy ExtraBold";
+        color: #f7e184;
+        font-size: 48px;
+        text-decoration: none;
+    }
+    
+    .footer-left p {
+        line-height: 30px;
+        color: #fff;
+    }
+
+    .footer-center .footer-menu a {
+        font-family: "Gilroy ExtraBold";
+        color: #000;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .2em;
+    }
+
+    .footer-right, .footer-user.panel {
+        font-family: "Open Sans Light";
+        font-size: 15px;
+        line-height: 36px;
+    }
