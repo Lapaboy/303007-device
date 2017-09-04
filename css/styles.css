@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-weight: 700;
     font-family: "Gilroy ExtraBold";
     font-style: normal;
@@ -7,8 +7,7 @@
         url(../fonts/gilroyextrabold.woff2) format("woff2")
 }
 
-@font-face{
-    font-weight: lighter;
+@font-face {
     font-family: "Gilroy Light";
     font-style: normal;
     src:
@@ -26,7 +25,6 @@
 }
 
 @font-face{
-    font-weight: lighter;
     font-family: "Open Sans Light";
     font-style: normal;
     src:
@@ -34,7 +32,7 @@
         url(../fonts/opensanslight.woff2) format("woff2")
 }
 
-/** COMMON */
+/** ----- COMMON ----- */
 body {
     color: #464646;
     min-width: 1240px;
@@ -63,7 +61,7 @@ h1, h2 {
     display: none;
 }
 
-/* HEADER */
+/* ----- HEADER ----- */
 header {
     background: #f7e296;
     height: 300px;
@@ -89,7 +87,7 @@ header {
         line-height: 36px;
     }
 
-    .menu-links a {
+    .menu-links > li > a {
         font-family: "Gilroy ExtraBold";
         color: #000;
         font-size: 18px;
@@ -98,7 +96,13 @@ header {
         letter-spacing: .2em;
     }
 
-/* MAIN */
+    .catalog-additional a {
+        font-family: "Open Sans Light", "Arial", sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+/* ----- MAIN INDEX ----- */
 .slide h2 {
     line-height: 56px;
     letter-spacing: .012em;
@@ -124,8 +128,11 @@ header {
     font-size: 16px;
     line-height: 40px;
     color: #000;
-    /* Нужен ли тут этот шрифт тут или родителю? */
-    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    font-family: "Gilroy ExtraBold","Arial", sans-serif;
+}
+
+.popular-products a {
+    background-color: #f7e296;
 }
 
 .popular-products span {
@@ -137,16 +144,94 @@ header {
     letter-spacing: .015em;
 }
 
-.services h2 {
-    letter-spacing: .018em;
+.services {
+    background: #ebebeb;
 }
 
-.services p {
-    line-height: 30px;
-    letter-spacing: .018em;
+    .services h2 {
+        letter-spacing: .018em;
+    }
+
+    .services p {
+        line-height: 30px;
+        letter-spacing: .018em;
+    }
+/* ----- */
+
+/* ----- MAIN CATALOG ----- */
+
+.breadcrumbs, .breadcrumbs a {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0,0,0,.3);
+    text-decoration: none;
 }
 
-/* ----------*/
+.catalog-subtitles {
+    background: #ebebeb;    
+}
+
+    .catalog-subtitles > span {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: .23em;
+        font-family: "Gilroy ExtraBold","Arial",sans-serif;
+        color: #000;
+    }
+.catalog-content .filters {
+    background: #ebebeb;    
+}
+
+.sort-types, .sort-types a {
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.filter .filter-title {
+    font-size: 18px;
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    color: #000;
+}
+
+.filter label {
+    padding-left: 39px;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.item-desc h3 {
+    font-size: 18px;
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    color: #000;
+    letter-spacing: .012em;
+}
+
+.item-desc span {
+    text-align: right;
+    font-family: "Gilroy Light","Arial",sans-serif;
+}
+
+.order-menu .object-action-compare {
+    color: rgba(0,0,0,.5);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.catalog-nav {
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    color: rgba(0,0,0,.3);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3.5px;
+    background: #ebebeb;    
+}
+/* ----- */
+
+/* ----- FOOTER ----- */
 footer {
     background-color: #464646;
     height: 300px;
@@ -183,3 +268,5 @@ footer {
         font-size: 15px;
         line-height: 36px;
     }
+
+/* ----- */
