@@ -7,40 +7,42 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header class='content-wrapper'>
-      <a href='index.html' class='header-logo'>DEVICE</a>
-      <div class='search'>
-        <form class='search-form' action='https://echo.htmlacademy.ru' method='POST'>
-          <input type='text' placeholder='Поиск по сайту'/>
-          <input type='submit' name='submit' value='Найти'>
-        </form>
+    <header>
+      <div class='header-center clearfix'>
+        <a href='index.html' class='header-logo'>DEVICE</a>
+        <div class='search'>
+          <form class='search-form' action='https://echo.htmlacademy.ru' method='POST'>
+            <input type='text' placeholder='Поиск по сайту'/>
+            <input type='submit' name='submit' value='Найти'>
+          </form>
+        </div>
+        <div class='panel'>
+          <a href='profile.html' class='panel-user'>Валентин Петухов</a>
+          <a href='logout.html' class='panel-logout'>Выйти</a>
+          <a href='compare.html' class='panel-compare'>Сравнить</a>
+          <a href='cart.html' class='panel-cart'>Корзина</a>
+        </div>
+        <nav class='main-menu'>
+          <ul class='menu-links'>
+            <li>
+              <a class='menu-link' href='catalog.html'>Каталог товаров</a>
+              <ul class='catalog-additional visually-hidden'>
+                <li><a href='virtual.html'>Виртуальная реальность</a></li>
+                <li><a href='fitnes-braslets.html'>Фитнес-браслеты</a></li>
+                <li><a href='quadrocopters.html'>Квадрокоптеры</a></li>
+                <li><a href='monopods.html'>Моноподы для селфи</a></li>
+                <li><a href='smart-clocks.html'>Умные часы</a></li>
+                <li><a href='action-cameras.html'>Эшкн-камеры</a></li>
+              </ul>
+            </li>
+            <li><a class='menu-link' href='delivery.html'>Доставка</a></li>
+            <li><a class='menu-link' href='warranty.html'>Гарантия</a></li>
+            <li><a class='menu-link' href='contacts.html'>Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class='panel'>
-        <a href='profile.html' class='panel-user'>Валентин Петухов</a>
-        <a href='logout.html' class='panel-logout'>Выйти</a>
-        <a href='compare.html' class='panel-compare'>Сравнить</a>
-        <a href='cart.html' class='panel-cart'>Корзина</a>
-      </div>
-      <nav class='main-menu'>
-        <ul class='menu-links'>
-          <li>
-            <a class='menu-link' href='catalog.html'>Каталог товаров</a>
-            <ul class='catalog-additional'>
-              <li><a href='virtual.html'>Виртуальная реальность</a></li>
-              <li><a href='fitnes-braslets.html'>Фитнес-браслеты</a></li>
-              <li><a href='quadrocopters.html'>Квадрокоптеры</a></li>
-              <li><a href='monopods.html'>Моноподы для селфи</a></li>
-              <li><a href='smart-clocks.html'>Умные часы</a></li>
-              <li><a href='action-cameras.html'>Эшкн-камеры</a></li>
-            </ul>
-          </li>
-          <li><a class='menu-link' href='delivery.html'>Доставка</a></li>
-          <li><a class='menu-link' href='warranty.html'>Гарантия</a></li>
-          <li><a class='menu-link' href='contacts.html'>Контакты</a></li>
-        </ul>
-      </nav>
     </header>
-    <main class='content-wrapper'>
+    <main>
 
       <div class='catalog-title'>
         <h2>Моноподы для селфи</h2>
@@ -51,21 +53,23 @@
         </ul>
       </div>
 
-      <div class='catalog-subtitles'>
-        <span class='filter-subtitle'>Фильтр:</span>
-        <span class='sort-subtitle'>Сортировка:</span>
-        <ul class='sort-types'>
-          <li class='selected'>По цене</li>
-          <li><a href='#'>По типу</a></li>
-          <li><a href='#'>По популярности</a></li>
-        </ul>
-        <div class='sort-direction-buttons'>
-          <a href='#' class='button-sort-asc'>up</a>
-          <a href='#' class='button-sort-desc'>down</a>
+      <div class='catalog-subtitles clearfix'>
+        <span class='filter-subtitle catalog-subtitle'>Фильтр:</span>
+        <div class='sort-controls'>
+          <span class='sort-subtitle catalog-subtitle'>Сортировка:</span>
+          <ul class='sort-types'>
+            <li class='selected'>По цене</li>
+            <li><a href='#'>По типу</a></li>
+            <li><a href='#'>По популярности</a></li>
+          </ul>
+          <div class='sort-direction-buttons'>
+            <a href='#' class='button-sort-asc'>up</a>
+            <a href='#' class='button-sort-desc'>down</a>
+          </div>
         </div>
       </div>
 
-      <div class='catalog-content'>
+      <div class='catalog-content clearfix'>
         <!-- FILTERS -->
         <div class='filters'>
           <form class='filter-form' action='https://echo.htmlacademy.ru' method='POST'>
@@ -161,7 +165,7 @@
       </div>
 
     </main>
-    <footer class='content-wrapper'>
+    <footer>
       <div class='content-wrapper'>
         <div class='footer-left'>
           <a href='index.html' class='footer-logo'>DEVICE</a>

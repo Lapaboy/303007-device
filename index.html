@@ -8,42 +8,44 @@
   </head>
   <body>
     <header>
-      <a href='index.html' class='header-logo'>DEVICE</a>
-      <div class='search'>
-        <form class='search-form' action='https://echo.htmlacademy.ru' method='POST'>
-          <input type='text' placeholder='Поиск по сайту'/>
-          <input type='submit' name='submit' value='Найти'>
-        </form>
+      <div class='header-center clearfix'>
+        <a href='index.html' class='header-logo'>DEVICE</a>
+        <div class='search'>
+          <form class='search-form' action='https://echo.htmlacademy.ru' method='POST'>
+            <input type='text' placeholder='Поиск по сайту'/>
+            <input type='submit' name='submit' value='Найти'>
+          </form>
+        </div>
+        <div class='panel'>
+          <a href='login.html' class='panel-logoin'>Войти</a>
+          <a href='compare.html' class='panel-compare'>Сравнить</a>
+          <a href='cart.html' class='panel-cart'>Корзина</a>
+        </div>
+        <nav class='main-menu'>
+          <ul class='menu-links'>
+            <li>
+              <a class='menu-link' href='catalog.html'>Каталог товаров</a>
+              <ul class='catalog-additional visually-hidden'>
+                <li><a href='virtual.html'>Виртуальная реальность</a></li>
+                <li><a href='fitnes-braslets.html'>Фитнес-браслеты</a></li>
+                <li><a href='quadrocopters.html'>Квадрокоптеры</a></li>
+                <li><a href='monopods.html'>Моноподы для селфи</a></li>
+                <li><a href='smart-clocks.html'>Умные часы</a></li>
+                <li><a href='action-cameras.html'>Эшкн-камеры</a></li>
+              </ul>
+            </li>
+            <li><a class='menu-link' href='delivery.html'>Доставка</a></li>
+            <li><a class='menu-link' href='warranty.html'>Гарантия</a></li>
+            <li><a class='menu-link' href='contacts.html'>Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class='panel'>
-        <a href='login.html' class='panel-logoin'>Войти</a>
-        <a href='compare.html' class='panel-compare'>Сравнить</a>
-        <a href='cart.html' class='panel-cart'>Корзина</a>
-      </div>
-      <nav class='main-menu'>
-        <ul class='menu-links'>
-          <li>
-            <a class='menu-link' href='catalog.html'>Каталог товаров</a>
-            <ul class='catalog-additional'>
-              <li><a href='virtual.html'>Виртуальная реальность</a></li>
-              <li><a href='fitnes-braslets.html'>Фитнес-браслеты</a></li>
-              <li><a href='quadrocopters.html'>Квадрокоптеры</a></li>
-              <li><a href='monopods.html'>Моноподы для селфи</a></li>
-              <li><a href='smart-clocks.html'>Умные часы</a></li>
-              <li><a href='action-cameras.html'>Эшкн-камеры</a></li>
-            </ul>
-          </li>
-          <li><a class='menu-link' href='delivery.html'>Доставка</a></li>
-          <li><a class='menu-link' href='warranty.html'>Гарантия</a></li>
-          <li><a class='menu-link' href='contacts.html'>Контакты</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
 
       <div class='slider'>
         <!-- SLIDE -->
-        <section class='slide'>
+        <section class='slide clearfix'>
           <img src='img/slide-1-selfiestick.png' alt='Селфипалка'>
           <div class='slide-description'>
             <span class='slide-number'>01</span>
@@ -71,7 +73,7 @@
         </section>
         <!-- END SLIDE -->
         <!-- SLIDE -->
-        <section class='slide visually-hidden'>
+        <section class='slide clearfix visually-hidden'>
           <img src='img/slide-2-clocks.png' alt='Фитнес-браслет'>
           <div class='slide-description'>
             <span class='slide-number'>02</span>
@@ -91,7 +93,7 @@
         </section>
         <!-- END SLIDE -->
         <!-- SLIDE -->
-        <section class='slide visually-hidden'>
+        <section class='slide clearfix visually-hidden'>
           <img src='img/slide-3-quadrocopter.jpg' alt='Квадрокоптер'>
           <div class='slide-description'>
             <span class='slide-number'>03</span>

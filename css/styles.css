@@ -82,60 +82,107 @@ header {
     margin: 40px auto auto;
     background: #f7e296;
     height: 300px;
+    padding-top: 34px;
 }
-
-    .header-logo {
-        font-family: "Gilroy ExtraBold";
-        color: #000;
-        font-size: 48px;
-        text-decoration: none;
-    }
-
-    .search {
-        font-family: "Open Sans Light";
-        color: rgba(0, 0, 0, .3);
-        font-size: 15px;
-        line-height: 36px;
-    } 
     
-    panel {
-        font-family: "Open Sans Light";
-        font-size: 15px;
-        line-height: 36px;
+    .header-center {
+        padding-right: 60px;
+        padding-left: 60px;
+
+        position: relative;
     }
 
-    .menu-links > li > a {
-        font-family: "Gilroy ExtraBold";
-        color: #000;
-        font-size: 18px;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: .2em;
-    }
+        .header-logo {
+            font-family: "Gilroy ExtraBold";
+            color: #000;
+            font-size: 48px;
+            text-decoration: none;
 
-    .catalog-additional a {
-        font-family: "Open Sans Light", "Arial", sans-serif;
-        font-size: 15px;
-        text-decoration: none;
-    }
+            position: absolute;
+            top: -64px;        }
+
+        .search {
+            font-family: "Open Sans Light";
+            color: rgba(0, 0, 0, .3);
+            font-size: 15px;
+            line-height: 36px;
+
+            float:left;
+        } 
+        
+        .panel {
+            font-family: "Open Sans Light";
+            font-size: 15px;
+            line-height: 36px;
+
+            float: right;
+        }
+
+        .main-menu {
+            clear: both;
+        }
+            .menu-links {
+                list-style: none;
+            }
+
+            .menu-links li {
+                display: inline-block;
+                vertical-align: baseline;
+            }
+
+            .menu-links > li > a {
+                font-family: "Gilroy ExtraBold";
+                color: #000;
+                font-size: 18px;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: .2em;
+            }
+
+            .catalog-additional a {
+                font-family: "Open Sans Light", "Arial", sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+            }
 
 /* ----- MAIN INDEX ----- */
 main {
     width: 1160px;
     margin: 0 auto 82px;
 }
-
-    .slide h2 {
-        line-height: 56px;
-        letter-spacing: .012em;
-        word-spacing: .012em;
+    .slider {
+        position: relative;        
     }
 
-    .slide p {
-        line-height: 30px;
-        letter-spacing: .012em;
-        word-spacing: .01em;
-    }
+        .slider-control {
+            position: absolute;
+            right: 80px;
+            bottom: 270px;
+            /* z-index: 3;
+            padding-left: 0;
+            font-size: 0; */
+        }
+
+        .slide > img {
+            float: left;
+        }
+
+        .slide-description {
+            float: right;
+            width: 511px;
+        }
+
+            .slide h2 {
+                line-height: 56px;
+                letter-spacing: .012em;
+                word-spacing: .012em;
+            }
+
+            .slide p {
+                line-height: 30px;
+                letter-spacing: .012em;
+                word-spacing: .01em;
+            }
 
     .info h2 {
         letter-spacing: .012em;
@@ -236,7 +283,16 @@ main {
 
 /* ----- MAIN CATALOG ----- */
 
-.breadcrumbs, .breadcrumbs a {
+.breadcrumbs li {
+    position: relative;
+    padding-right: 39px;
+    letter-spacing: .012em;
+    word-spacing: .012em;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.breadcrumbs a {
     font-weight: 400;
     font-size: 14px;
     color: rgba(0,0,0,.3);
@@ -247,37 +303,75 @@ main {
     background: #ebebeb;    
 }
 
-    .catalog-subtitles > span {
+    .catalog-subtitle {
         font-size: 16px;
         text-transform: uppercase;
         letter-spacing: .23em;
         font-family: "Gilroy ExtraBold","Arial",sans-serif;
         color: #000;
     }
-.catalog-content .filters {
-    background: #ebebeb;    
+
+
+    .filter-subtitle {
+        float: left;
+    }
+
+    .sort-controls {
+        float: right;
+    }
+
+.filters {
+    float: left;
 }
 
-.sort-types, .sort-types a {
-    font-family: "Open Sans";
-    font-size: 14px;
-    line-height: 18px;
-    color: #000;
-    text-decoration: none;
-    white-space: nowrap;
+    .filter-form {
+        width: 200px;
+        /* padding-top: 68px;
+        padding-right: 68px; */
+    }
+
+        .catalog-content .filters {
+            background: #ebebeb;    
+        }
+
+        .sort-types .sort-types a {
+            font-family: "Open Sans";
+            font-size: 14px;
+            line-height: 18px;
+            color: #000;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .filter .filter-title {
+            font-size: 18px;
+            font-family: "Gilroy ExtraBold","Arial",sans-serif;
+            color: #000;
+        }
+
+        .filter label {
+            padding-left: 39px;
+            font-size: 14px;
+            line-height: 40px;
+        }
+
+.catalog-items {
+    float: right;
+    width: 832px;
+    /* margin-top: 50px; */
+
+    margin-bottom: 10px;
+    padding-left: 72px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.filter .filter-title {
-    font-size: 18px;
-    font-family: "Gilroy ExtraBold","Arial",sans-serif;
-    color: #000;
-}
-
-.filter label {
-    padding-left: 39px;
-    font-size: 14px;
-    line-height: 40px;
-}
+    .catalog-item {
+        width: 360px;
+        min-height: 486px;
+        margin-top: 19px;
+    }
 
 .item-desc h3 {
     font-size: 18px;
@@ -304,6 +398,14 @@ main {
     text-decoration: none;
     letter-spacing: 3.5px;
     background: #ebebeb;    
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 20px;
+    margin-bottom: 73px;
+    padding: 25px 0;
+    list-style: none;
 }
 /* ----- */
 
