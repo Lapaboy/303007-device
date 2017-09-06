@@ -43,7 +43,7 @@ body {
     font-weight: 400;
     font-size: 15px;
     font-family: "Open Sans Light","Arial",sans-serif;
-    outline: 1px solid red;
+    
 }
 
 
@@ -51,7 +51,7 @@ h1, h2 {
     font-size: 47px;
     font-family: "Gilroy ExtraBold", "Arial",sans-serif;
     color:#000;
-        outline: 1px solid red;
+        
 }
 
 .extra-button {
@@ -62,24 +62,24 @@ h1, h2 {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 3.6px;
-        outline: 1px solid red;
+        
 }
 
 .visually-hidden {
     display: none;
-        outline: 1px solid red;
+        
 }
 
 #slide2, #slide3 {
     display: none;
-        outline: 1px solid red;
+        
 }
 
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
-        outline: 1px solid red;
+        
 }
 
 /* ----- HEADER ----- */
@@ -87,9 +87,9 @@ header {
     width: 1160px;
     margin: 40px auto auto;
     background: #f7e296;
-    height: 300px;
+    min-height: 265px;
     padding-top: 34px;
-        outline: 1px solid red;
+        
 }
     
     .header-center {
@@ -100,7 +100,7 @@ header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-            outline: 1px solid red;
+            
     }
 
         .header-logo {
@@ -112,7 +112,7 @@ header {
             position: absolute;
             top: -64px;     
             
-            outline: 1px solid red;
+            
         }
                 
 
@@ -121,31 +121,72 @@ header {
             color: rgba(0, 0, 0, .3);
             font-size: 15px;
             line-height: 36px;
-
-            outline: 1px solid red;
         } 
+
+        .search-form input[type='text'] {
+            padding-left: 40px;
+            background:  #f7e296;
+            border: none;
+            opacity: .3;
+            width: 315px;
+        }
+
+        .search-form input[type='text']:focus {
+            outline: none;
+            /* border: 1px solid #48A521; */
+            box-shadow: none;
+        }
+
+        .search-form input[type='text']:focus + .search-form input[type='submit']{
+            display: block;
+        }
+
+        .search-form input[type='submit'] {
+            display: none;
+        }
+
+        .search-form::before {
+            content: "";
+            position: absolute;
+            top: 21px;
+            width: 18px;
+            height: 18px;
+            background-image: url(../img/sprites.png);
+            background-repeat: no-repeat;
+            background-position: -4px -340px;
+            /* -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%); */
+            transform: translateY(-50%);
+        }
+
+        .search-form:focus {
+            opacity: 1;
+            border-bottom: 2px solid black;
+            outline: none;
+        }
             
         
         .panel {
             font-family: "Open Sans Light";
             font-size: 15px;
             line-height: 36px;
-                outline: 1px solid red;
+                
         }
 
         .main-menu {
             width: 100%;
-                outline: 1px solid red;
+            position: relative;
         }
             .menu-links {
                 list-style: none;
-                    outline: 1px solid red;
+                padding: 0;
+                    
             }
 
             .menu-links li {
                 display: inline-block;
                 vertical-align: baseline;
-                    outline: 1px solid red;
+                    
             }
 
             .menu-links > li > a {
@@ -155,25 +196,48 @@ header {
                 text-transform: uppercase;
                 text-decoration: none;
                 letter-spacing: .2em;
-                    outline: 1px solid red;
+                    
+            }
+
+            .drop-catalog-additional:hover + .catalog-additional {
+                display: block;
+            }
+
+            .catalog-additional {
+                top: 32px;
+                padding-top: 28px;
+                min-height: 144px;
+                width: 640px;
+                padding-left: 0;
+                position: absolute;
+                display: none;
+                background-color: #f7e296;
+            }
+
+            .catalog-additional:hover {
+                display: block;
+            }
+            
+            .catalog-additional li {
+                width: 200px;
+                margin-right: 40px;
             }
 
             .catalog-additional a {
                 font-family: "Open Sans Light", "Arial", sans-serif;
                 font-size: 15px;
                 text-decoration: none;
-                    outline: 1px solid red;
             }
 
 /* ----- MAIN INDEX ----- */
 main {
     width: 1160px;
     margin: 0 auto 82px;
-        outline: 1px solid red;
+        
 }
     .slider {
         position: relative;      
-            outline: 1px solid red;
+            
     }
 
         .slider-control {
@@ -183,50 +247,50 @@ main {
             /* z-index: 3;
             padding-left: 0;
             font-size: 0; */
-                outline: 1px solid red;
+                
         }
 
         .slide {
             display: flex;
             justify-content: space-between;  
-                outline: 1px solid red;
+                
         }
 
             .slide-description {
                 width: 511px;
-                    outline: 1px solid red;
+                    
             }
 
                 .slide h2 {
                     line-height: 56px;
                     letter-spacing: .012em;
                     word-spacing: .012em;
-                        outline: 1px solid red;
+                        
                 }
 
                 .slide p {
                     line-height: 30px;
                     letter-spacing: .012em;
                     word-spacing: .01em;
-                        outline: 1px solid red;
+                        
                 }
 
                 .slide-features {
                     list-style: none;
                     display: flex;
                     justify-content: space-between;
-                        outline: 1px solid red;
+                        
                 }
 
     .info h2 {
         letter-spacing: .012em;
-            outline: 1px solid red;
+            
     }
 
     .info p {
         font-size: 15px;
         line-height: 30px;
-            outline: 1px solid red;
+            
     }
 
     .delivery-partners {
@@ -234,21 +298,21 @@ main {
         line-height: 40px;
         color: #000;
         font-family: "Gilroy ExtraBold","Arial", sans-serif;
-            outline: 1px solid red;
+            
     }
 
     .popular-products {
         margin-bottom: 170px;
         display: flex;
         justify-content: space-around;
-            outline: 1px solid red;
+            
     }
         
         .popular-products a {
             width: 160px;
             height: 160px;
             text-decoration: none;
-                outline: 1px solid red;
+                
         }
 
         .popular-products .product-quadro-block {
@@ -259,7 +323,7 @@ main {
             background-color: #f7e296;
             width: 158px;
             height: 154px;
-                outline: 1px solid red;
+                
         }
 
         .popular-products span {
@@ -269,14 +333,14 @@ main {
             color: #000;
 
             letter-spacing: .015em;
-                outline: 1px solid red;
+                
         }
 
     .services {
         background: #ebebeb;
         display: flex;
         justify-content: space-between;
-            outline: 1px solid red;
+            
     }
 
         .services-menu {
@@ -284,18 +348,18 @@ main {
             margin-top: 0;
             padding-left: 0;
             list-style: none;
-                outline: 1px solid red;
+                
         }
 
             .services h2 {
                 letter-spacing: .018em;
-                    outline: 1px solid red;
+                    
             }
 
             .services p {
                 line-height: 30px;
                 letter-spacing: .018em;
-                    outline: 1px solid red;
+                    
             }
         
         .service {
@@ -303,29 +367,29 @@ main {
             margin-right: 45px;
             padding-top: 10px;
             padding-left: 10px;
-                outline: 1px solid red;
+                
         }
 
     .partners {
         display: flex;
         justify-content: space-around;
-            outline: 1px solid red;
+            
     }
 
     .info {
         display: flex;
         justify-content: space-between;
-            outline: 1px solid red;
+            
     }
 
         .about {
             width: 475px;
-                outline: 1px solid red;
+                
         }
 
         .contacts {
             width: 560px;
-                outline: 1px solid red;
+                
         }
 
 /* ----- */
@@ -339,7 +403,7 @@ main {
     word-spacing: .012em;
     display: inline-block;
     vertical-align: baseline;
-        outline: 1px solid red;
+        
 }
 
 .breadcrumbs a {
@@ -347,14 +411,14 @@ main {
     font-size: 14px;
     color: rgba(0,0,0,.3);
     text-decoration: none;
-        outline: 1px solid red;
+        
 }
 
 .catalog-subtitles {
     display: flex;
     justify-content: space-between;
     background: #ebebeb;    
-        outline: 1px solid red;
+        
 
 
 }
@@ -365,7 +429,7 @@ main {
         letter-spacing: .23em;
         font-family: "Gilroy ExtraBold","Arial",sans-serif;
         color: #000;
-            outline: 1px solid red;
+            
     }
 
 .catalog-content {
@@ -375,19 +439,19 @@ main {
 
     .filters {
         float: left;
-            outline: 1px solid red;
+            
     }
 
         .filter-form {
             width: 200px;
             /* padding-top: 68px;
             padding-right: 68px; */
-                outline: 1px solid red;
+                
         }
 
             .catalog-content .filters {
                 background: #ebebeb;    
-                    outline: 1px solid red;
+                    
             }
 
             .sort-types .sort-types a {
@@ -397,21 +461,21 @@ main {
                 color: #000;
                 text-decoration: none;
                 white-space: nowrap;
-                    outline: 1px solid red;
+                    
             }
 
             .filter .filter-title {
                 font-size: 18px;
                 font-family: "Gilroy ExtraBold","Arial",sans-serif;
                 color: #000;
-                    outline: 1px solid red;
+                    
             }
 
             .filter label {
                 padding-left: 39px;
                 font-size: 14px;
                 line-height: 40px;
-                    outline: 1px solid red;
+                    
             }
         
     .catalog-items {
@@ -424,14 +488,14 @@ main {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-            outline: 1px solid red;
+            
     }
 
         .catalog-item {
             width: 360px;
             min-height: 486px;
             margin-top: 19px;
-                outline: 1px solid red;
+                
         }
 
             .item-desc h3 {
@@ -439,20 +503,20 @@ main {
                 font-family: "Gilroy ExtraBold","Arial",sans-serif;
                 color: #000;
                 letter-spacing: .012em;
-                    outline: 1px solid red;
+                    
             }
 
             .item-desc span {
                 text-align: right;
                 font-family: "Gilroy Light","Arial",sans-serif;
-                    outline: 1px solid red;
+                    
             }
 
             .order-menu .object-action-compare {
                 color: rgba(0,0,0,.5);
                 font-size: 13px;
                 text-decoration: none;
-                    outline: 1px solid red;
+                    
             }
 
     .catalog-nav {
@@ -470,7 +534,7 @@ main {
         margin-bottom: 73px;
         padding: 25px 0;
         list-style: none;
-            outline: 1px solid red;
+            
     }
 /* ----- */
 
@@ -478,7 +542,7 @@ main {
 footer {
     background-color: #464646;
     height: 300px;
-        outline: 1px solid red;
+        
 }
 
     .footer-inner {
@@ -486,14 +550,14 @@ footer {
         justify-content: space-between;
         width: 1160px;
         margin: 0 auto;
-            outline: 1px solid red;
+            
     }
 
         .footer-left {
             width: 340px;
             min-height: 190px;
             margin-right: 27px;
-                outline: 1px solid red;
+                
         }
 
             .footer-left .footer-logo {
@@ -501,19 +565,19 @@ footer {
                 color: #f7e184;
                 font-size: 48px;
                 text-decoration: none;
-                    outline: 1px solid red;
+                    
             }
             
             .footer-left p {
                 line-height: 30px;
                 color: #fff;
-                    outline: 1px solid red;
+                    
             }
         
         .footer-center {
             width: 439px;
             margin-top: 83px;
-                outline: 1px solid red;
+                
         }
 
             .footer-center .footer-menu a {
@@ -523,25 +587,25 @@ footer {
                 text-transform: uppercase;
                 text-decoration: none;
                 letter-spacing: .2em;
-                    outline: 1px solid red;
+                    
             }
 
         .footer-right {
             width: 340px;
-                outline: 1px solid red;
+                
         }
 
             .footer-right, .footer-user.panel {
                 font-family: "Open Sans Light";
                 font-size: 15px;
                 line-height: 36px;
-                    outline: 1px solid red;
+                    
             }
 
             .footer-right span {
                 color: #fff;
                 line-height: 30px;
-                    outline: 1px solid red;
+                    
             }
 
 /* ----- */
