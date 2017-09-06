@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div class='header-center clearfix'>
+      <div class='header-center'>
         <a href='index.html' class='header-logo'>DEVICE</a>
         <div class='search'>
           <form class='search-form' action='https://echo.htmlacademy.ru' method='POST'>
@@ -45,7 +45,7 @@
 
       <div class='slider'>
         <!-- SLIDE -->
-        <section class='slide clearfix'>
+        <section id='slide1' class='slide'>
           <img src='img/slide-1-selfiestick.png' alt='Селфипалка'>
           <div class='slide-description'>
             <span class='slide-number'>01</span>
@@ -73,7 +73,7 @@
         </section>
         <!-- END SLIDE -->
         <!-- SLIDE -->
-        <section class='slide clearfix visually-hidden'>
+        <section id='slide2' class='slide'>
           <img src='img/slide-2-clocks.png' alt='Фитнес-браслет'>
           <div class='slide-description'>
             <span class='slide-number'>02</span>
@@ -93,7 +93,7 @@
         </section>
         <!-- END SLIDE -->
         <!-- SLIDE -->
-        <section class='slide clearfix visually-hidden'>
+        <section id='slide3' class='slide'>
           <img src='img/slide-3-quadrocopter.jpg' alt='Квадрокоптер'>
           <div class='slide-description'>
             <span class='slide-number'>03</span>
@@ -163,33 +163,35 @@
           <span class='product-label'>Квадрокоптеры</span>
         </a>
       </div>
-      <div class='services clearfix'>
+      <div class='services'>
         <ul class='services-menu'>
           <li class='extra-button'><a href='#'>Доставка</a></li>
           <li class='extra-button'><a href='#'>Гарантия</a></li>
           <li class='extra-button'><a href='#'>Кредит</a></li>
         </ul>
-        <section class='service'>
-          <h2>Доставка</h2>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-        </section>
-        <section class='service visually-hidden'>
-          <h2>Гарантия</h2>
-          <p>
-            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, 
-            мы выдадим вам новый.Товар, не дом, конечно же.
-          </p>
-        </section>
-        <section class='service visually-hidden'>
-          <h2>Доставка</h2>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-        </section>
+        <div class='service-slides'>
+          <section class='service'>
+            <h2>Доставка</h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </section>
+          <section class='service visually-hidden'>
+            <h2>Гарантия</h2>
+            <p>
+              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, 
+              мы выдадим вам новый.Товар, не дом, конечно же.
+            </p>
+          </section>
+          <section class='service visually-hidden'>
+            <h2>Доставка</h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </section>
+        </div>
       </div>
 
       <div class='partners'>
@@ -207,7 +209,7 @@
         </a>
       </div>
 
-      <div class='info clearfix'>
+      <div class='info'>
         <section class='about'>
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -230,7 +232,7 @@
 
     </main>
     <footer>
-      <div class='content-wrapper clearfix'>
+      <div class='footer-inner'>
         <div class='footer-left'>
           <a href='index.html' class='footer-logo'>DEVICE</a>
           <p>г. Москва, ул. Строителей 15</p>
@@ -253,9 +255,9 @@
             <a href='compare.html' class='panel-compare'>Сравнить</a>
             <a href='cart.html' class='panel-cart'>Корзина</a>
           </div>
+          <span>Тел.: +7 (495) 495-95-95</span>
+          <img src='img/https://htmlacademy.ru/intensive/htmlcss' alt='HTMLAcademy Logo'>
         </div>
-        <span>Тел.: +7 (495) 495-95-95</span>
-        <img src='img/https://htmlacademy.ru/intensive/htmlcss' alt='HTMLAcademy Logo'>
       </div>
     </footer>
     <div class='write-us visually-hidden'>
