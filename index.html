@@ -16,18 +16,10 @@
             <input type='submit' name='submit' value='Найти'>
           </form>
         </div>
-        <div class='panel'>
-          <ul class='panel-links'>
-            <li>
-              <a href='login.html' class='panel-login'>Войти</a>
-            </li>
-            <li>
-              <a href='compare.html' class='panel-compare'>Сравнить</a>
-            </li>
-            <li>
-              <a href='cart.html' class='panel-cart'>Корзина</a>
-            </li>
-          </ul>
+        <div class='panel-links'>
+          <a href='cart.html' class='panel-cart'>Корзина</a>
+          <a href='compare.html' class='panel-compare'>Сравнить</a>
+          <a href='login.html' class='panel-login'>Войти</a>
         </div>
         <nav class='main-menu'>
           <ul class='menu-links'>
@@ -51,13 +43,13 @@
     </header>
     <main>
 
-      <div class='slider'>
+      <div class='slider container'>
         <!-- SLIDE -->
         <section id='slide1' class='slide'>
           <img src='img/slide-1-selfiestick.png' alt='Селфипалка'>
           <div class='slide-description'>
             <span class='slide-number'>01</span>
-            <h2>Делай селфи, как Бен Стиллер!</h2>
+            <h2>Делай селфи,<br> как Бен Стиллер!</h2>
             <p>
               Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -124,16 +116,14 @@
           </div>
         </section>
         <!-- END SLIDE -->
-        <div class='slider-control'>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class='slider-control'>
+            <li><label></label></li>
+            <li><label></label></li>
+            <li><label></label></li>
           </ul>
-        </div>
       </div>
 
-      <div class='popular-products'>
+      <div class='popular-products container'>
         <a href='virtual.html'>
           <div class='product-quadro-block'>
             <img src='img/product-1.png' alt='Виртуальная реальность'>
@@ -173,9 +163,9 @@
       </div>
       <div class='services'>
         <ul class='services-menu'>
-          <li class='extra-button'><a href='#'>Доставка</a></li>
-          <li class='extra-button'><a href='#'>Гарантия</a></li>
-          <li class='extra-button'><a href='#'>Кредит</a></li>
+          <li><a class='extra-button' href='#'>Доставка</a></li>
+          <li><a class='extra-button' href='#'>Гарантия</a></li>
+          <li><a class='extra-button' href='#'>Кредит</a></li>
         </ul>
         <div class='service-slides'>
           <section class='service'>
@@ -202,7 +192,7 @@
         </div>
       </div>
 
-      <div class='partners'>
+      <div class='partners container'>
         <a class='partner' href='http://www.dji.com/' target='blank'>
           <img src='img/partner-1.jpg' alt='dji'>
           <img src='img/partner-1-gray.jpg' alt='dji'>
@@ -221,7 +211,7 @@
         </a>
       </div>
 
-      <div class='info'>
+      <div class='info container'>
         <section class='about'>
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -231,13 +221,13 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href='about-us.html' class='extra-button'>Подробнее о нас </a>
+          <a href='about-us.html' class='about-us-button extra-button'>Подробнее о нас </a>
         </section>
         <section class='contacts'>
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <a class='map' href="https://yandex.ru/maps/?um=constructor%3A6a83c6bf737108e7767955b9efb5c446de9e67847b68fdf83064b8c5ae00dd2b&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A6a83c6bf737108e7767955b9efb5c446de9e67847b68fdf83064b8c5ae00dd2b&amp;width=560&amp;height=222&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
-          <a href='write-us.html' class='extra-button'>Напишите нам</a>
+          <a href='write-us.html' class='write-us-button extra-button'>Напишите нам</a>
         </section>
       </div>
 
@@ -261,7 +251,7 @@
           </div>
         </div>
         <div class='footer-right'>
-          <div class='footer-user-panel'>
+          <!-- <div class='footer-user-panel'>
             <ul class='footer-panel-links'>
               <li>
                 <a href='login.html' class='panel-login'>Войти</a>
@@ -273,13 +263,13 @@
                 <a href='cart.html' class='panel-cart'>Корзина</a>
               </li>
             </ul>
-          </div>
+          </div> -->
           <span>Тел.: +7 (495) 495-95-95</span>
           <img src='img/https://htmlacademy.ru/intensive/htmlcss' alt='HTMLAcademy Logo'>
         </div>
       </div>
     </footer>
-    <div class='write-us visually-hidden'>
+    <!-- <div class='write-us visually-hidden'>
       <button class='modal-close'></button>
       <form class='write-us-form' action='https://echo.htmlacademy.ru' method='POST'>
         <label for='write-us-name'>Ваше имя:</label>
@@ -294,6 +284,6 @@
     <div class='map visually-hidden'>
       <button class='modal-close'></button>
       <map id='yandex-map' name='yandex-map'></map>
-    </div>
+    </div> -->
   </body>
 </html>
