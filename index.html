@@ -11,8 +11,8 @@
       <div class='header-center'>
         <a href='index.html' class='header-logo'>DEVICE</a>
         <div class='search'>
-          <form class='search-form' action='https://echo.htmlacademy.ru' method='POST'>
-            <input class='search-form-field' type='text' placeholder='Поиск по сайту'/>
+          <form class='search-form' action='https://echo.htmlacademy.ru' method='post'>
+            <input class='search-form-field' type='search' name='search' placeholder='Поиск по сайту'>
             <input type='submit' name='submit' value='Найти'>
           </form>
         </div>
@@ -45,8 +45,8 @@
 
       <div class='slider container'>
         <!-- SLIDE -->
-        <section id='slide1' class='slide'>
-          <img src='img/slide-1-selfiestick.png' alt='Селфипалка'>
+        <section class='slide slide-1'>
+          <img src='img/slide-1-selfiestick.png' alt='Селфипалка' width='384' height='486'>
           <div class='slide-description'>
             <span class='slide-number'>01</span>
             <h2>Делай селфи,<br> как Бен Стиллер!</h2>
@@ -73,11 +73,11 @@
         </section>
         <!-- END SLIDE -->
         <!-- SLIDE -->
-        <section id='slide2' class='slide'>
-          <img src='img/slide-2-clocks.png' alt='Фитнес-браслет'>
+        <section class='slide slide-2'>
+          <img src='img/slide-2-clocks.png' alt='Фитнес-браслет' width='345' height='485'>
           <div class='slide-description'>
             <span class='slide-number'>02</span>
-            <h2>Худеем правильно!</h2>
+            <h2>Худеем <br>правильно!</h2>
             <p>
               Мотивирующие фитнес-браслеты помогут найти в себе силы 
               не пропускать занятия и соблюдать диету.
@@ -93,11 +93,11 @@
         </section>
         <!-- END SLIDE -->
         <!-- SLIDE -->
-        <section id='slide3' class='slide'>
-          <img src='img/slide-3-quadrocopter.jpg' alt='Квадрокоптер'>
+        <section class='slide slide-3'>
+          <img src='img/slide-3-quadrocopter.png' alt='Квадрокоптер' width='526' height='334'>
           <div class='slide-description'>
             <span class='slide-number'>03</span>
-            <h2>Порхает как бабочка, жалит как пчела!</h2>
+            <h2>Порхает как бабочка,<br> жалит как пчела!</h2>
             <p>
               Этот обычный, на первый взгляд, квадрокоптер оснащен 
               мощным лазером, замаскированным под стандартную камеру.
@@ -117,9 +117,9 @@
         </section>
         <!-- END SLIDE -->
           <ul class='slider-control'>
-            <li><label></label></li>
-            <li><label></label></li>
-            <li><label></label></li>
+            <li class='slide-li-1'><label></label></li>
+            <li class='slide-li-2'><label></label></li>
+            <li class='slide-li-3'><label></label></li>
           </ul>
       </div>
 
@@ -162,11 +162,17 @@
         </a>
       </div>
       <div class='services'>
-        <div class='container'>
-          <ul class='services-menu'>
-            <li><a class='extra-button' href='#'>Доставка</a></li>
-            <li><a class='extra-button' href='#'>Гарантия</a></li>
-            <li><a class='extra-button' href='#'>Кредит</a></li>
+        <div class='services-inner container'>
+          <ul class='service-buttons'>
+            <li>
+              <label class='extra-button'>Доставка</label>
+            </li>
+            <li>
+              <label class='extra-button'>Гарантия</label>
+            </li>
+            <li>
+              <label class='extra-button'>Кредит</label>
+            </li>
           </ul>
           <div class='service-slides'>
             <section class='service'>
@@ -184,10 +190,10 @@
               </p>
             </section>
             <section class='service visually-hidden'>
-              <h2>Доставка</h2>
+              <h2>Кредит</h2>
               <p>
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. 
+                Выгодные для нашего банка, разумеется.
               </p>
             </section>
           </div>
@@ -228,7 +234,7 @@
         <section class='contacts'>
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class='map' href="https://yandex.ru/maps/?um=constructor%3A6a83c6bf737108e7767955b9efb5c446de9e67847b68fdf83064b8c5ae00dd2b&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A6a83c6bf737108e7767955b9efb5c446de9e67847b68fdf83064b8c5ae00dd2b&amp;width=560&amp;height=222&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+          <a class='map' href='https://yandex.ru/maps/?um=constructor%3A6a83c6bf737108e7767955b9efb5c446de9e67847b68fdf83064b8c5ae00dd2b&amp;source=constructorStatic' target='_blank'><img alt='map' src='https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A6a83c6bf737108e7767955b9efb5c446de9e67847b68fdf83064b8c5ae00dd2b&amp;width=560&amp;height=222&amp;lang=ru_RU' style='border: 0;' /></a>
           <a href='write-us.html' class='write-us-button extra-button'>Напишите нам</a>
         </section>
       </div>
@@ -259,7 +265,7 @@
             <a href='cart.html' class='panel-cart footer-panel-compare'>Корзина</a>
           </div>
           <span>Тел.: +7 (495) 495-95-95</span>
-          <img src='img/https://htmlacademy.ru/intensive/htmlcss' alt='HTMLAcademy Logo'>
+          <a class='htmlacademy-footer-logo' href='https://htmlacademy.ru/' target='blank'></a>
         </div>
       </div>
     </footer>
@@ -279,5 +285,6 @@
       <button class='modal-close'></button>
       <map id='yandex-map' name='yandex-map'></map>
     </div> -->
+    <script type='text/javascript' charset='utf-8' src='js/script.js'></script>
   </body>
 </html>
