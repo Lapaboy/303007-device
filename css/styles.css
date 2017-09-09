@@ -135,7 +135,7 @@ header {
 
         .header-logo {
             color: #000;
-            font-family: "Gilroy ExtraBold";
+            font-family: "Gilroy ExtraBold", "Arial", sans-serif;
             font-size: 48px;
             position: absolute;
             text-decoration: none;
@@ -151,7 +151,7 @@ header {
             
         .search {
             color: rgba(0, 0, 0, .3);
-            font-family: "Open Sans Light";
+            font-family: "Open Sans Light", "Arial", sans-serif;
             font-size: 15px;
             line-height: 36px;
         } 
@@ -252,6 +252,8 @@ header {
             .panel-links .panel-logout {
                 margin: 0;
                 opacity: .3;
+                padding-left: 0;
+                padding-right: 23px;
             }
 
             .panel-links a.panel-exit {
@@ -337,10 +339,15 @@ header {
             .menu-links > li:nth-of-type(3) {
                 margin-right: 100px;
             }
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                .menu-links > li:nth-of-type(3) {
+                    margin-right: 92px;
+                }
+             }
 
             .menu-links > li > a {
                 color: #000;
-                font-family: "Gilroy ExtraBold";
+                font-family: "Gilroy ExtraBold", "Arial", sans-serif;
                 font-size: 18px;
                 letter-spacing: .2em;
                 text-decoration: none;
@@ -444,6 +451,7 @@ header {
                 opacity: .6;
                 outline: none;
                 padding: 4px;
+                font-size: 0;
             }
             .slider-control li:hover {
                 opacity: 1;
@@ -757,25 +765,13 @@ header {
 
         .partners a {
             position: relative;
+            filter: grayscale(100%);
         }
 
-        .partners a:hover img:first-child {
-            opacity: 1;
-        }
-      
-        .partners a:hover img:last-child {
-            opacity: 0;
-        }
-
-        .partners img {
-            transition: opacity 0.2s ease-in;
-        }
-
-        .partners img:last-child {
-            left: 0;
-            opacity: 1;
-            position: absolute;
-            top: 0;
+        .partners a:hover {
+            position: relative;
+            filter: grayscale(0%);
+            transition: filter 0.15s ease-in;
         }
       
     .info {
@@ -859,11 +855,11 @@ header {
     letter-spacing: 0.5px;
     padding-left: 117px;
     margin-top: 31px;
-    margin-bottom: 51px;
+    margin-bottom: 49px;
 }
 
 .catalog-title h2 {
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     margin-top: 30px;
 }
 
@@ -1014,7 +1010,7 @@ header {
 
             .filter-form {
                 margin-left: 51px;
-                padding-top: 69px;
+                padding-top: 70px;
                 width: 200px;
             }
             
@@ -1035,10 +1031,10 @@ header {
                 font-family: "Gilroy ExtraBold", "Arial", sans-serif;
                 font-size: 18px;
                 padding-top: 11px;
-                width: 100%;
+                width: 200px;
             }
                 .form-description-color {
-                    margin-bottom: 13px;
+                    margin-bottom: 14px;
                 }
                 .form-description-bluetooth {
                     margin-bottom: 13px;
@@ -1116,6 +1112,9 @@ header {
             .filter-form input[type="radio"] {
                 display: none;
             }
+            .filter-form button[type="submit"] {
+                padding-left: 23px;
+            }
             
             .filter-form label {
                 cursor: pointer;
@@ -1127,6 +1126,14 @@ header {
             }
             
             .filter-form label::before {
+                content: "";
+                height: 20px;
+                left: 0;
+                position: absolute;
+                top: 9px;
+                width: 20px;
+            }
+            .filter-form label.bluetooth-check::before {
                 content: "";
                 height: 23px;
                 left: 0;
@@ -1162,19 +1169,20 @@ header {
             
             .filter-radio + label::before {
                 border-radius: 50%;
-                border: 2px solid #dbdbdb;
+                border: 3px solid #000;
                 box-sizing: border-box;
             }
             
             .filter-radio:enabled + label:hover::before {
-                border: 2px solid #cecece;
+                border: 3px solid #5f5f5f;
             }
             
             .filter-radio:enabled:checked + label:hover::before {
-                border: 2px solid #c4c4c4;
+                border: 3px solid #5f5f5f;
             }
             
             .filter-radio:checked + label::after {
+                background: #000;
                 border-radius: 50%;
                 border: 2px solid black;
                 box-sizing: border-box;
@@ -1205,15 +1213,16 @@ header {
 
             .filter-checkbox + label::before,
             .filter-checkbox:checked + label::before {
-                background-color: #dbdbdb;
+                border: 2px solid #000;
+                border-radius: 5px;
             }
             
             .filter-checkbox:enabled + label:hover::before {
-                background-color: #cecece;
+                /* background-color: #cecece; */
             }
             
             .filter-checkbox:enabled:checked + label:hover::before {
-                background-color: #c4c4c4;
+                /* background-color: #c4c4c4; */
             }
             
             .filter-checkbox:checked + label::after {
@@ -1236,17 +1245,12 @@ header {
         padding-top: 69px;
         width: 832px;
     }
-
-    .catalog-items:hover + body {
-        background: red;
-    }
-
         .catalog-item {
             margin-left: 39px;
             min-height: 486px;
             position: relative;
             width: 360px;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
         }
 
         .catalog-item:hover img {
@@ -1291,6 +1295,7 @@ header {
                 position: absolute;
                 right: 0;
                 bottom: 52px;
+                font-size: 16px;
             }
 
     .order-menu {
@@ -1330,16 +1335,12 @@ header {
         justify-content: space-between;
         letter-spacing: 3.5px;
         list-style: none;
-        margin-bottom: 63px;
-        margin-left: 76px;
+        margin-bottom: 66px;
         text-decoration: none;
         text-transform: uppercase;
-        width: 100%;
-        padding-top: 21px;
-        padding-bottom: 22px;
-        padding-left: 55px;
-        padding-right: 27px;
+
         width: 757px;
+        margin-top: -9px;
     }
         .pages {
             width: 87px;
@@ -1354,14 +1355,30 @@ header {
             text-transform: uppercase;
             text-decoration: none;
             letter-spacing: 3.5px;
+            padding-left: 29px;
+            padding-right: 27px;
+            padding-top: 26px;
+            padding-bottom: 25px;
         }
 
         .pages a {
             opacity: .3;
+            padding: 0;
+            padding-top: 26px;
+            padding-bottom: 25px;
         }
 
         .pages .page-selected {
             opacity: 1;
+        }
+
+        .pages-direction:hover {
+            background: #d9d9d9;
+        }
+
+        .pages-direction:active {
+            opacity: .6;
+            color: #bababa;
         }
 /* ----- */
 
@@ -1516,7 +1533,7 @@ footer {
             }
 
             .footer-right {
-                font-family: "Open Sans Light";
+                font-family: "Open Sans Light", "Arial", sans-serif;
                 font-size: 15px;
                 line-height: 36px;
                 padding-top: 7px;
