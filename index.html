@@ -58,15 +58,15 @@
             <ul class='slide-features'>
               <li class='slide-feature'>
                 <span class='slide-feature-value'>8,5 м</span>
-                <span class='silde-feature-property'>Длина палки</span>
+                <span class='slide-feature-property'>Длина палки</span>
               </li>
               <li class='slide-feature'>
                 <span class='slide-feature-value'>5 кг</span>
-                <span class='silde-feature-property'>Вес палки</span>
+                <span class='slide-feature-property'>Вес палки</span>
               </li>
               <li class='slide-feature'>
                 <span class='slide-feature-value'>Карбон</span>
-                <span class='silde-feature-property'>Материал</span>
+                <span class='slide-feature-property'>Материал</span>
               </li>
             </ul>  
           </div>
@@ -134,7 +134,7 @@
           <div class='product-quadro-block product-flex-align-exeption'>
             <img src='img/product-2.png' alt='Моноподы для селфи'>
           </div>
-          <span class='product-label'>Моноподы для селфи</span>
+          <span class='product-label'>Моноподы<br> для селфи</span>
         </a>
         <a href='action-cameras.html'>
           <div class='product-quadro-block'>
@@ -164,32 +164,32 @@
       <div class='services'>
         <div class='services-inner container'>
           <ul class='service-buttons'>
-            <li>
-              <label class='extra-button'>Доставка</label>
+            <li class='selected-service'>
+              <label class='extra-button service-button-1'>Доставка</label>
             </li>
             <li>
-              <label class='extra-button'>Гарантия</label>
+              <label class='extra-button service-button-2'>Гарантия</label>
             </li>
             <li>
-              <label class='extra-button'>Кредит</label>
+              <label class='extra-button service-button-3'>Кредит</label>
             </li>
           </ul>
           <div class='service-slides'>
-            <section class='service'>
+            <section class='service service-1'>
               <h2>Доставка</h2>
               <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
                 Ведь мы неплохо заработаем, поднимая его на ваш этаж.
               </p>
             </section>
-            <section class='service visually-hidden'>
+            <section class='service service-2 visually-hidden'>
               <h2>Гарантия</h2>
               <p>
                 Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, 
                 мы выдадим вам новый.Товар, не дом, конечно же.
               </p>
             </section>
-            <section class='service visually-hidden'>
+            <section class='service service-3 visually-hidden'>
               <h2>Кредит</h2>
               <p>
                 Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. 
@@ -225,7 +225,7 @@
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
           <ul class='delivery-partners'>
-            <li>Деловые линии</li>
+            <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
@@ -262,29 +262,31 @@
           <div class='footer-panel-links'>
             <a href='login.html' class='panel-login footer-panel-login'>Войти</a>
             <a href='compare.html' class='panel-compare footer-panel-compare'>Сравнить</a>
-            <a href='cart.html' class='panel-cart footer-panel-compare'>Корзина</a>
+            <a href='cart.html' class='panel-cart footer-panel-cart'>Корзина</a>
           </div>
           <span>Тел.: +7 (495) 495-95-95</span>
           <a class='htmlacademy-footer-logo' href='https://htmlacademy.ru/' target='blank'></a>
         </div>
       </div>
     </footer>
-    <!-- <div class='write-us visually-hidden'>
-      <button class='modal-close'></button>
-      <form class='write-us-form' action='https://echo.htmlacademy.ru' method='POST'>
-        <label for='write-us-name'>Ваше имя:</label>
-          <input type='text' class='write-us-field' id='write-us-name' placeholder='Представьтесь, пожалуйста' name='email'/>
-        <label for='write-us-email'>Ваш e-mail:</label>
-          <input type='text' class='write-us-field' id='write-us-email' placeholder='Для отправки ответа' name='email'/>
-        <label for='write-us-text'>Текст письма:</label>
-          <input type='text' class='write-us-field' id='write-us-text' placeholder='В свободной форме' name='text'/>
-        <input type='submit' class='extra-button' value='Отправить'>
+    <div class='modal-write-us'>
+      <button class='modal-close' type='button'>Закрыть</button>
+      <form class='form-write-us' action='https://echo.htmlacademy.ru' method='POST'>
+        <label class='form-write-us-name'>
+          Ваше имя:
+          <input type='text' name='name' placeholder='Представтесь, пожалуйста'>
+        </label>
+        <label class='form-write-us-email'>
+          Ваш e-mail:
+          <input type='text' name='email' placeholder='Для отправки ответа'>
+        </label>
+        <label class='form-write-us-letter'>
+          Текст письма:
+          <textarea name='letter' placeholder='В свободной форме'></textarea>
+        </label>
+        <button class='extra-button' type='submit'>Отправить</button>
       </form>
     </div>
-    <div class='map visually-hidden'>
-      <button class='modal-close'></button>
-      <map id='yandex-map' name='yandex-map'></map>
-    </div> -->
     <script type='text/javascript' charset='utf-8' src='js/script.js'></script>
   </body>
 </html>
