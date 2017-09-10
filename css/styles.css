@@ -432,7 +432,7 @@ header {
         }
 
         .slider-control {
-            bottom: 150px;
+            top: 325px;
             margin: 0;
             position: absolute;
             right: 80px;
