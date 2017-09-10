@@ -9,9 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
 function slideSwitcher () {
     const slideControl = document.querySelector('.slider-control');
     slideControl.addEventListener('click', evt => {
-        const id = evt.target.className.split('-')[2];
+        const id = evt.target.dataset.number;
         if (id) {
             switchSlide(id);
+        }
+        
+        if (evt.target.tagName === 'LI') {
+            for (let i = 0; i < slideControl.children.length; i++) {
+                const element = slideControl.children[i];
+                element.className = 'slide-toggle';
+            }
+            evt.target.className = 'slide-toggle-selected';
         }
     });
 };

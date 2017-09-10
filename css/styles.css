@@ -432,14 +432,23 @@ header {
         }
 
         .slider-control {
-            bottom: 154px;
+            bottom: 150px;
             margin: 0;
             position: absolute;
             right: 80px;
         }
 
-            .slider-control li {
+            .slide-toggle {
                 background-image: url(../img/svg/slider-button-empty.svg);
+                background-repeat: no-repeat;
+                width: 14px;
+                font-size: 0;
+                height: 14px;
+                background-size: cover;
+                cursor: pointer;
+            }
+            .slide-toggle-selected {
+                background-image: url(../img/svg/slider-button.svg);
                 background-repeat: no-repeat;
                 width: 14px;
                 font-size: 0;
