@@ -1155,7 +1155,6 @@ header {
                 background-repeat: no-repeat;
                 content: "";
                 height: 25px;
-                left: -1px;
                 position: absolute;
                 width: 28px;
             }
