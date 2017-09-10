@@ -210,8 +210,7 @@ header {
             .search-form::before {
                 -ms-transform: translateY(-50%);
                 -webkit-transform: translateY(-50%);
-                background-image: url(../img/sprites.png);
-                background-position: -4px -340px;
+                background-image: url(../img/svg/search.svg);
                 background-repeat: no-repeat;
                 content: "";
                 height: 18px;
@@ -263,12 +262,11 @@ header {
                 .panel-login::before {
                     -ms-transform: translateY(-50%);
                     -webkit-transform: translateY(-50%);
-                    background-image: url(../img/sprites.png);
-                    background-position: -4px -467px;
+                    background-image: url(../img/svg/user.svg);
                     background-repeat: no-repeat;
                     content: "";
                     height: 17px;
-                    left: 1px;
+                    left: 0px;
                     position: absolute;
                     top: 20px;
                     transform: translateY(-50%);
@@ -277,28 +275,26 @@ header {
                 .panel-compare::before {
                     -ms-transform: translateY(-50%);
                     -webkit-transform: translateY(-50%);
-                    background-image: url(../img/sprites.png);
-                    background-position: -4px -68px;
+                    background-image: url(../img/svg/compare.svg);
                     background-repeat: no-repeat;
                     content: "";
                     height: 17px;
-                    left: 7px;
+                    left: 5px;
                     position: absolute;
-                    top: 20px;
+                    top: 22px;
                     transform: translateY(-50%);
                     width: 20px;
                 }
                 .panel-cart::before {
                     -ms-transform: translateY(-50%);
                     -webkit-transform: translateY(-50%);
-                    background-image: url(../img/sprites.png);
-                    background-position: -4px -5px;
+                    background-image: url(../img/svg/cart.svg);
                     background-repeat: no-repeat;
                     content: "";
                     height: 17px;
-                    left: 7px;
+                    left: 4px;
                     position: absolute;
-                    top: 20px;
+                    top: 21px;
                     transform: translateY(-50%);
                     width: 20px;
                 }
@@ -436,22 +432,20 @@ header {
         }
 
         .slider-control {
-            bottom: 149px;
+            bottom: 154px;
             margin: 0;
             position: absolute;
             right: 80px;
-            z-index: 3;
         }
 
             .slider-control li {
-                background-color: transparent;
-                border-radius: 50%;
-                border: 2px solid #000;
-                cursor: pointer;
-                opacity: .6;
-                outline: none;
-                padding: 4px;
+                background-image: url(../img/svg/slider-button-empty.svg);
+                background-repeat: no-repeat;
+                width: 14px;
                 font-size: 0;
+                height: 14px;
+                background-size: cover;
+                cursor: pointer;
             }
             .slider-control li:hover {
                 opacity: 1;
@@ -461,11 +455,11 @@ header {
             }
             
             .slider-control > li:nth-of-type(2) {
-                margin-left: 18px;
+                margin-left: 15px;
             }
 
             .slider-control > li:nth-of-type(3) {
-                margin-left: 18px;
+                margin-left: 17px;
             }
 
         .slide {
@@ -572,7 +566,7 @@ header {
     .popular-products {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 244px;
+        margin-bottom: 242px;        
     }
         
         .popular-products a {
@@ -792,7 +786,7 @@ header {
         }
 
         .info section {
-            margin-bottom: 81px;
+            margin-bottom: 79px;
         }
 
         .about {
@@ -853,7 +847,6 @@ header {
 /* ----- MAIN CATALOG ----- */
 .catalog-title {
     letter-spacing: 0.5px;
-    padding-left: 117px;
     margin-top: 31px;
     margin-bottom: 49px;
 }
@@ -861,6 +854,7 @@ header {
 .catalog-title h2 {
     margin-bottom: 19px;
     margin-top: 30px;
+    margin-left: 61px;
 }
 
 .catalog-subtitles {
@@ -885,6 +879,7 @@ header {
     .breadcrumbs {
         margin: 0;
         padding: 0;
+        margin-left: 61px;
     }
     
         .breadcrumbs li {
@@ -896,8 +891,8 @@ header {
             word-spacing: .012em;    
         }
             .breadcrumbs li:after {
-                background-image: url(../img/sprites.png);
-                background-position: -4px -403px;
+                background-image: url(../img/svg/nav-arrow.svg);
+                background-repeat: no-repeat;
                 bottom: 5px;
                 content: "";
                 height: 7px;
@@ -964,15 +959,13 @@ header {
             position: relative;
         }
             .button-sort-asc::before {
-                background-image: url(../img/sprites.png);
-                background-position: -5px -367px;
+                background-image: url(../img/svg/icon-up-dir.svg);
                 background-repeat: no-repeat;
                 content: "";
                 height: 9px;
                 left: 0;
                 position: absolute;
                 top: -10px;
-                transform: rotate(180deg);
                 width: 17px;
             }
 
@@ -982,8 +975,7 @@ header {
             position: relative;
         }
             .button-sort-desc::before {
-                background-image: url(../img/sprites.png);
-                background-position: -5px -367px;
+                background-image: url(../img/svg/icon-down-dir.svg);
                 background-repeat: no-repeat;
                 content: "";
                 height: 9px;
@@ -1077,8 +1069,6 @@ header {
             }
             
             .range-controls .toggle:active {
-                /* width: 15px;
-                height: 15px; */
                 background: rgba(0, 0, 0, 0.1);
             }
             
@@ -1141,30 +1131,24 @@ header {
                 top: 8px;
                 width: 23px;
             }
-            
+
             .filter-checkbox + label::before,
             .filter-checkbox:checked + label::before {
-                background-color: #dbdbdb;
-            }
-            
-            .filter-checkbox:enabled + label:hover::before {
-                background-color: #cecece;
-            }
-            
-            .filter-checkbox:enabled:checked + label:hover::before {
-                background-color: #c4c4c4;
-            }
-            
-            .filter-checkbox:checked + label::after {
-                background-image: url("../img/sprite.png");
-                background-position: -5px -385px;
+                background-image: url(../img/svg/checkbox-off.svg);
+                height: 23px;
                 background-repeat: no-repeat;
-                bottom: 16px;
+                width: 24px;
+
+            }
+            
+            .filter-checkbox:checked + label::before {
+                background-image: url(../img/svg/checkbox-on.svg);
+                background-repeat: no-repeat;
                 content: "";
-                height: 8px;
-                left: 6px;
+                height: 25px;
+                left: -1px;
                 position: absolute;
-                width: 12px;
+                width: 28px;
             }
             
             .filter-radio + label::before {
@@ -1194,9 +1178,7 @@ header {
                 width: 9px;
             }
             
-            .filter-checkbox:disabled + label,
             .filter-radio:disabled + label,
-            .filter-checkbox:disabled + label:hover,
             .filter-radio:disabled + label:hover {
                 opacity: 0.3;
             }
@@ -1210,31 +1192,13 @@ header {
                 width: 200px;
                 z-index: 1;
             }
-
-            .filter-checkbox + label::before,
-            .filter-checkbox:checked + label::before {
-                border: 2px solid #000;
-                border-radius: 5px;
+            
+            .filter-checkbox:enabled + label:hover {
+                opacity: .6;
             }
             
-            .filter-checkbox:enabled + label:hover::before {
-                /* background-color: #cecece; */
-            }
-            
-            .filter-checkbox:enabled:checked + label:hover::before {
-                /* background-color: #c4c4c4; */
-            }
-            
-            .filter-checkbox:checked + label::after {
-                background-image: url("../img/sprites.png");
-                background-position: -5px -385px;
-                background-repeat: no-repeat;
-                bottom: 16px;
-                content: "";
-                height: 8px;
-                left: 6px;
-                position: absolute;
-                width: 12px;
+            .filter-checkbox:enabled:checked + label:hover {
+                opacity: .6;
             }
         
     .catalog-items {
@@ -1424,10 +1388,10 @@ footer {
 
             .footer-left::after {
                 background-color: #f7e184;
-                bottom: 75px;
+                bottom: 82px;
                 content: "";
                 height: 7px;
-                left: 0;
+                left: 3px;
                 position: absolute;
                 width: 80px;
             }
@@ -1460,19 +1424,18 @@ footer {
 
             .social-links {
                 display: flex;
-                justify-content: end;
-                margin: 62px auto;
+                justify-content: space-between;
+                margin: 65px 141px;
                 width: 163px;
             }
 
             .social-button {
-                background-image: url(../img/sprites.png);
                 background-repeat: no-repeat;
                 display: inline-block;
                 height: 38px;
                 opacity: .3;
                 width: 39px;
-                margin-right: 16px;
+                margin-right: 15px;
             }
                 .social-button:hover {
                     opacity: .6;
@@ -1482,15 +1445,15 @@ footer {
                 }
 
                 .facebook {
-                    background-position: -5px -131px;
+                    background-image: url(../img/svg/fb.svg);
                 }
 
                 .instagram {
-                    background-position: -5px -267px;
+                    background-image: url(../img/svg/instagram.svg);
                 }
 
                 .twitter {
-                    background-position: -5px -420px;
+                    background-image: url(../img/svg/twitter.svg);
                 }
 
         .footer-right {
@@ -1516,20 +1479,18 @@ footer {
             }
 
             .footer-panel-login::before {
-                background-position: -4px -511px;
-                left: -2px;
-                top: 10px;
+                background-image: url(../img/svg/user-footer.svg);
+                top: 13px;
             }
 
             .footer-panel-compare::before {
-                background-position: -4px -109px;
-                left: 5px;
-                top: 11px;
+                background-image: url(../img/svg/compare-footer.svg);
+                top: 15px;
             }
             .footer-panel-cart::before {
-                background-position: -4px -47px;
+                background-image: url(../img/svg/cart-footer.svg);
                 left: 2px;
-                top: 8px;
+                top: 13px;
             }
 
             .footer-right {
@@ -1557,8 +1518,7 @@ footer {
             .htmlacademy-footer-logo::before {
                 -ms-transform: translateY(-50%);
                 -webkit-transform: translateY(-50%);
-                background-image: url(../img/sprites.png);
-                background-position: -4px -179px;
+                background-image: url(../img/svg/logo-html.svg);
                 background-repeat: no-repeat;
                 content: "";
                 height: 37px;
@@ -1569,7 +1529,7 @@ footer {
                 width: 29px;
             }
                 .htmlacademy-footer-logo:hover::before {
-                    background-position: -4px -222px;
+                    opacity: .6;
                 }
                 .htmlacademy-footer-logo:active::before {
                     opacity: .3;
