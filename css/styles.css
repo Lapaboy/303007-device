@@ -1203,7 +1203,6 @@ header {
     background-repeat: no-repeat;
     content: "";
     height: 25px;
-    left: -1px;
     position: absolute;
     width: 28px;
 }
@@ -1557,6 +1556,290 @@ footer {
     opacity: .3;
 }
 
+.catalog-content-inner {
+    display: flex;
+    justify-content: flex-start;
+    
+}  
+
+.filters {
+    background: #efefef;
+    width: 328px;
+}
+
+.filter-form {
+    margin-left: 51px;
+    padding-top: 70px;
+    width: 200px;
+}
+
+.filter-form fieldset {
+    border: none;
+    margin: 0;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+.filter-form section:last-of-type {
+    padding-bottom: 31px;
+}
+
+.form-description {
+    border-top: 2px solid #000000;
+    color: #000000;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-size: 18px;
+    padding-top: 11px;
+    width: 200px;
+}
+
+.form-description-color {
+    margin-bottom: 14px;
+}
+
+.form-description-bluetooth {
+    margin-bottom: 13px;
+}
+
+.range-controls {
+    margin-top: 30px;
+    padding-left: 5px;
+    position: relative;
+    width: 195px;
+}
+
+.range-controls .bar {
+    background: #91c92f;
+    height: 2px;
+    width: 112px;
+}
+
+.range-controls .toggle {
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: -6px;
+    width: 15px;
+}
+
+.range-controls .toggle::before {
+    background: rgba(0, 0, 0, 0.34);
+    border-radius: 15px;
+    content: '';
+    height: 5px;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+    width: 5px;
+}
+
+.range-controls .toggle:active {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.range-controls .toggle-min {
+    left: -2px;
+}
+
+.range-controls .toggle-max {
+    left: 110px;
+}
+
+.range-controls .scale {
+    background-color: #dbdbdb;
+    height: 2px;
+}
+
+.selected-price {
+    color: rgba(0, 0, 0, 0.2);
+    font-family: "Gilroy Light", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 9px;
+    padding-bottom: 4px;
+}
+
+.selected-price span:first-child {
+    margin-right: 60px;
+}
+
+.filter-form input[type="checkbox"],
+.filter-form input[type="radio"] {
+    display: none;
+}
+.filter-form button[type="submit"] {
+    padding-left: 23px;
+}
+
+.filter-form label {
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 39px;
+    position: relative;
+}
+
+.filter-form label::before {
+    content: "";
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 9px;
+    width: 20px;
+}
+.filter-form label.bluetooth-check::before {
+    content: "";
+    height: 23px;
+    left: 0;
+    position: absolute;
+    top: 8px;
+    width: 23px;
+}
+
+.filter-checkbox + label::before,
+.filter-checkbox:checked + label::before {
+    background-image: url(../img/svg/checkbox-off.svg);
+    height: 23px;
+    background-repeat: no-repeat;
+    width: 24px;
+
+}
+
+.filter-checkbox:checked + label::before {
+    background-image: url(../img/svg/checkbox-on.svg);
+    background-repeat: no-repeat;
+    content: "";
+    height: 25px;
+    position: absolute;
+    width: 28px;
+}
+
+.filter-radio + label::before {
+    border-radius: 50%;
+    border: 3px solid #000;
+    box-sizing: border-box;
+}
+
+.filter-radio:enabled + label:hover::before {
+    border: 3px solid #5f5f5f;
+}
+
+.filter-radio:enabled:checked + label:hover::before {
+    border: 3px solid #5f5f5f;
+}
+
+.filter-radio:checked + label::after {
+    background: #000;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    content: "";
+    height: 9px;
+    left: 7px;
+    position: absolute;
+    top: 15px;
+    width: 9px;
+}
+
+.filter-radio:disabled + label,
+.filter-radio:disabled + label:hover {
+    opacity: 0.3;
+}
+
+.filter-form button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    outline: none;
+    width: 200px;
+    z-index: 1;
+}
+
+.filter-checkbox:enabled + label:hover {
+    opacity: .6;
+}
+
+.filter-checkbox:enabled:checked + label:hover {
+    opacity: .6;
+            }
+        
+.catalog-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    padding-top: 69px;
+    width: 832px;
+}
+.catalog-item {
+    margin-left: 39px;
+    min-height: 486px;
+    position: relative;
+    width: 360px;
+    margin-bottom: 20px;
+}
+
+.catalog-item:hover img {
+    opacity: .3;
+}
+
+.catalog-item:hover .order-menu {
+    display: block;
+}
+
+.new::after {
+    content: "NEW";
+    position: absolute;
+    top: 35px;
+    right: 27px;
+    width: 30px;
+    height: 16px;
+    padding: 20px 13px;
+    font-size: 14px;
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    text-align: center;
+    color: rgba(0,0,0,.2);
+    letter-spacing: 1px;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+}
+
+.catalog-item h3 {
+    margin: 0;
+    margin-top: 30px;
+    width: 260px;
+    font-size: 18px;
+    font-family: "Gilroy ExtraBold","Arial",sans-serif;
+    color: #000;
+    display: inline-block;
+    letter-spacing: .012em;
+}
+
+.item-cost {
+    font-family: "Gilroy Light","Arial",sans-serif;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 52px;
+    font-size: 16px;
+}
+
+.order-menu {
+    left: 84px;
+    position: absolute;
+    top: 178px;
+    z-index: 1;
+    display: none;
+    width: 201px;
+    height: 85px;
+}
+
 .footer-panel-links .footer-panel-login {
     margin-left: 0;
 }
@@ -1620,7 +1903,6 @@ footer {
 .htmlacademy-footer-logo:active::before {
     opacity: .3;
 }
-/* ----- */
 
 .modal-close {
     background-color: #f7e296;
