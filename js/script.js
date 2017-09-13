@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slideSwitcher();
     serviceSwitcher();
     writeUsButton();
+    formValidation();
 });
 
 function slideSwitcher () {
@@ -83,3 +84,23 @@ function writeUsButton() {
         modal.style.display = 'none';
     });
 }
+
+function formValidation() {
+    const form = document.querySelector('.form-write-us');
+    const inputs = [form.elements.name, form.elements.email, form.elements.letter];
+    inputs.forEach(input => {
+        input.addEventListener('input', evt => {
+            evt.target.style.background = '#f2f2f2';
+        });
+    });
+
+    form.addEventListener('submit', evt => {
+        const elements = evt.target.elements;
+        inputs.forEach(input => {
+            if (!input.value) {
+                evt.preventDefault();
+                input.style.background = '#f6dada';
+            }
+        });
+    });
+};
