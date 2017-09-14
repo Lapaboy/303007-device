@@ -72,21 +72,28 @@ function serviceSwitcher() {
 
 function writeUsButton() {
     const modal = document.querySelector('.modal-write-us');
+    const form = document.querySelector('.form-write-us');
+    const inputs = [form.elements.name, form.elements.email, form.elements.letter];
     const button = document.querySelector('.write-us-button');
 
     button.addEventListener('click', evt => {
         evt.preventDefault();
         modal.style.display = 'block';
+        inputs.forEach(input => {
+            input.style.background = '#f2f2f2';
+        });
     })
 
     const closeButton = document.querySelector('.modal-close');
     closeButton.addEventListener('click', evt => {
         modal.style.display = 'none';
+        modal.classList.remove('modal-error');
     });
 }
 
 function formValidation() {
     const form = document.querySelector('.form-write-us');
+    const modal = document.querySelector('.modal-write-us');
     const inputs = [form.elements.name, form.elements.email, form.elements.letter];
     inputs.forEach(input => {
         input.addEventListener('input', evt => {
@@ -96,11 +103,17 @@ function formValidation() {
 
     form.addEventListener('submit', evt => {
         const elements = evt.target.elements;
+        modal.classList.remove('modal-error');
+        let error = null;
         inputs.forEach(input => {
             if (!input.value) {
                 evt.preventDefault();
                 input.style.background = '#f6dada';
+                error = true;
             }
         });
+        if (error) {
+            setTimeout(()=>{modal.classList.add('modal-error')}, 10);
+        }
     });
 };
