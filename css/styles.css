@@ -1343,7 +1343,6 @@ section.slide-3
     justify-content: left;
     align-items: center;
     padding-left: 70px;
-    padding-right: 36px;
 }
 
 .sort-subtitle
@@ -1382,6 +1381,11 @@ section.slide-3
 .sort-type-link:active
 {
     opacity: 1;
+}
+
+.sort-direction-buttons
+{
+    width: 37px;
 }
 
 .sort-direction-buttons a:hover
@@ -2726,7 +2730,7 @@ footer
     padding-bottom: 16px;
     padding-left: 20px;
 
-    resize: vertical;
+    resize: none;
 
     border: none;
     outline: none;
