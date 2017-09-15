@@ -1348,6 +1348,7 @@ section.slide-3
 .sort-subtitle
 {
     overflow: hidden;
+    text-overflow: ellipsis;
 
 }
 
@@ -1355,12 +1356,14 @@ section.slide-3
 {
     margin-left: 50px;
     padding-left: 0;
-    width: 525px;
+    width: 458px;
+    flex-shrink: 0;
     
     list-style: none;
 }
 
-.sort-types li {
+.sort-types li 
+{
     margin-right: 23px;
 }
 
@@ -1385,7 +1388,8 @@ section.slide-3
 
 .sort-direction-buttons
 {
-    width: 37px;
+    width: 100px;
+    flex-shrink: 0;
 }
 
 .sort-direction-buttons a:hover
@@ -1411,7 +1415,7 @@ section.slide-3
 {
     position: absolute;
     top: -10px;
-    left: 0;
+    left: 61px;
 
     width: 17px;
     height: 9px;
@@ -1435,7 +1439,7 @@ section.slide-3
 {
     position: absolute;
     top: -11px;
-    left: 23px;
+    left: 87px;
 
     width: 17px;
     height: 9px;
